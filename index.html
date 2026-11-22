@@ -137,6 +137,72 @@ footer{background:var(--dk);color:#a9a1ad;padding:56px 0 96px;font-size:14px}foo
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.hero h1 .wd>span{transform:none}.scene .scene-photo.on{opacity:1;transform:none}}
 @media(max-width:820px){.hd{flex-wrap:wrap;height:auto;padding-top:10px}nav{order:3;width:100%;flex-wrap:wrap;gap:0 18px;font-size:14px;padding-bottom:6px}.hero .w{padding-top:170px}.fx{display:none}}
 @media(min-width:760px){.hero .w{grid-template-columns:1.25fr 1fr}.scene{max-width:440px;margin:0 0 0 auto}.sc-cap,.dots{justify-content:flex-end}.snap .card{flex-basis:calc(30% - 12px)}.steps{grid-template-columns:repeat(3,1fr)}.grid{grid-template-columns:repeat(4,1fr)}.cats{grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,minmax(0,1fr))}.cats .cat:first-child{grid-column:span 2;grid-row:span 2}.cats .cat:first-child .art{aspect-ratio:auto}.cats .cat:first-child .art svg{width:36%}.intro{grid-template-columns:1.3fr 1fr;align-items:end}.pd{grid-template-columns:1fr 1fr;gap:48px;align-items:start}.two{grid-template-columns:1.4fr 1fr;align-items:start}.of{grid-template-columns:1fr 1fr}footer .w{grid-template-columns:2fr 1fr 1fr}}
+
+/* PLUS offer presentation — scoped styles only */
+.offer-page{padding-top:34px;padding-bottom:84px}
+.offer-page .offer-hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);gap:clamp(28px,5vw,76px);align-items:center;padding:34px 0 58px}
+.offer-page .offer-kicker{display:inline-flex;align-items:center;gap:12px;color:var(--gold);font:600 11px Manrope,sans-serif;letter-spacing:.23em;text-transform:uppercase;margin-bottom:22px}
+.offer-page .offer-kicker:before{content:"";width:34px;height:1px;background:var(--gold)}
+.offer-page .offer-hero h1{font-size:clamp(42px,6.2vw,76px);max-width:12ch;margin:0 0 22px}
+.offer-page .offer-hero h1 em{color:var(--ac);font-style:italic}
+.offer-page .offer-lead{max-width:58ch;color:var(--mut);font-size:16px}
+.offer-page .offer-points{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:28px;color:var(--mut);font-size:12px}
+.offer-page .offer-points span{display:inline-flex;align-items:center;gap:8px}
+.offer-page .offer-points span:before{content:"✦";color:var(--gold);font-size:12px}
+.offer-page .offer-price-card{position:relative;overflow:hidden;background:var(--dk);color:#f7f3ee;padding:clamp(28px,4vw,42px);border:1px solid rgba(192,151,79,.55);box-shadow:0 24px 60px rgba(21,16,26,.12)}
+.offer-page .offer-price-card:before,.offer-page .offer-price-card:after{content:"";position:absolute;border:1px solid rgba(192,151,79,.24);border-radius:50%;pointer-events:none}
+.offer-page .offer-price-card:before{width:280px;height:280px;right:-150px;top:-155px}
+.offer-page .offer-price-card:after{width:210px;height:210px;right:-115px;top:-120px}
+.offer-page .offer-price-top{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:14px;padding-bottom:22px;border-bottom:1px solid rgba(247,243,238,.16);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#d6c8b7}
+.offer-page .offer-price-top b{color:var(--gold);font-weight:600}
+.offer-page .offer-price-label{position:relative;z-index:1;margin-top:26px;color:#d6c8b7;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.offer-page .offer-price-value{position:relative;z-index:1;font:500 clamp(58px,7vw,84px)/1 var(--serif);color:#fff;margin:8px 0 12px;letter-spacing:-.04em}
+.offer-page .offer-price-value small{font:600 14px Manrope,sans-serif;letter-spacing:.12em;color:var(--gold)}
+.offer-page .offer-price-desc{position:relative;z-index:1;color:#d6c8b7;font-size:13px;max-width:32ch}
+.offer-page .offer-price-list{position:relative;z-index:1;display:grid;gap:10px;margin:26px 0 28px;padding:0;list-style:none;color:#f2e9df;font-size:13px}
+.offer-page .offer-price-list li{display:flex;gap:10px;align-items:flex-start}
+.offer-page .offer-price-list li:before{content:"✓";color:var(--gold);font-weight:700}
+.offer-page .offer-price-cta{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:15px 18px;border:0;background:var(--gold);color:var(--dk);font:700 11px Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase;text-align:left;cursor:pointer;transition:background .25s,transform .25s}
+.offer-page .offer-price-cta:hover{background:#d8b875;transform:translateY(-2px)}
+.offer-page .offer-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin:12px 0 26px;padding-top:34px;border-top:1px solid var(--ln)}
+.offer-page .offer-heading h2{font-size:clamp(30px,4vw,44px)}
+.offer-page .offer-heading p{max-width:36ch;color:var(--mut);font-size:13px}
+.offer-page .offer-panels{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;align-items:start}
+.offer-page .offer-panel{background:var(--sf);border:1px solid var(--ln);padding:clamp(22px,3vw,34px)}
+.offer-page .offer-panel.included{border-top:3px solid var(--ac)}
+.offer-page .offer-panel.excluded{background:#f1ebe3;border-top:3px solid var(--gold)}
+.offer-page .offer-panel h3{font-size:27px;margin-bottom:18px}
+.offer-page .offer-panel .ck{gap:11px}
+.offer-page .offer-panel .ck li{font-size:13px;padding-left:24px;line-height:1.55}
+.offer-page .offer-panel .ck li:before{color:var(--ac)}
+.offer-page .offer-panel.excluded .ck li:before{color:var(--mut)}
+.offer-page .offer-note{display:grid;gap:10px;margin-top:18px;padding:20px 22px;background:#f7f3ee;border-left:3px solid var(--gold);color:var(--mut);font-size:13px}
+.offer-page .offer-note b{color:var(--ink)}
+.offer-page .offer-process{margin-top:58px}
+.offer-page .offer-process h2{font-size:clamp(30px,4vw,44px);margin-bottom:24px}
+.offer-page .offer-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;counter-reset:offerstep}
+.offer-page .offer-step{padding:20px 16px 18px;border-top:1px solid var(--gold);background:rgba(255,255,255,.48);counter-increment:offerstep}
+.offer-page .offer-step:before{content:"0" counter(offerstep);display:block;font:500 34px/1 var(--serif);color:var(--ac);margin-bottom:16px}
+.offer-page .offer-step b{display:block;font:500 19px/1.2 var(--serif);margin-bottom:8px}
+.offer-page .offer-step span{display:block;color:var(--mut);font-size:12px;line-height:1.6}
+.offer-page .offer-duo{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:48px}
+.offer-page .offer-duo .offer-panel{height:100%}
+.offer-page .offer-after{margin-top:42px}
+.offer-page .offer-after h3{font-size:27px;margin-bottom:16px}
+.offer-page .offer-after .ck{gap:11px}
+.offer-page .offer-after .ck li{font-size:13px}
+.offer-page .offer-disclaimer{margin:34px 0;padding:20px 22px;background:#eee7df;border:1px solid var(--ln);color:var(--mut);font-size:13px;display:grid;gap:10px}
+.offer-page .offer-disclaimer strong{color:var(--ac)}
+.offer-page .offer-bottom{position:relative;overflow:hidden;margin-top:34px;padding:clamp(28px,5vw,48px);background:var(--ac);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.offer-page .offer-bottom:after{content:"N";position:absolute;right:22%;top:-75px;font:italic 500 240px/1 var(--serif);color:rgba(255,255,255,.06);pointer-events:none}
+.offer-page .offer-bottom-copy{position:relative;z-index:1}
+.offer-page .offer-bottom h2{font-size:clamp(28px,4vw,42px);margin-bottom:8px}
+.offer-page .offer-bottom p{color:#ead9d6;font-size:13px;max-width:48ch}
+.offer-page .offer-bottom .btn{position:relative;z-index:1;flex:none;background:var(--gold);border-color:var(--gold);color:var(--dk);font-size:12px}
+.offer-page .offer-bottom .btn:hover{background:#e0c58d;border-color:#e0c58d}
+@media(max-width:820px){.offer-page .offer-hero,.offer-page .offer-panels,.offer-page .offer-duo{grid-template-columns:1fr}.offer-page .offer-hero{padding-top:12px}.offer-page .offer-price-card{max-width:560px}.offer-page .offer-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.offer-page .offer-heading{align-items:start;flex-direction:column}}
+@media(max-width:560px){.offer-page .offer-hero h1{font-size:clamp(40px,12vw,58px)}.offer-page .offer-steps{grid-template-columns:1fr}.offer-page .offer-bottom{align-items:flex-start;flex-direction:column}.offer-page .offer-points{display:grid;gap:8px}.offer-page .offer-price-top{font-size:9px}}
+
 </style>
 </head>
 <body class="top">
@@ -244,17 +310,52 @@ return `<section class="pg"><div class="w" style="max-width:620px"><h1>Sifariş 
 about(){seo("Haqqımızda","Nüra Aksesuar haqqında.");return `<section class="pg"><div class="w" style="max-width:720px"><h1>Sadə və zərif aksesuarlar</h1><p style="color:var(--mut);margin-bottom:14px">Biz bijuteriya və aksesuarları sadə seçim və rahat sifariş prosesi ilə təqdim edirik. Hər məhsulda qiymət və mövcudluq məlumatı açıq göstərilir.</p><p style="color:var(--mut);margin-bottom:22px">Mağazanın real hekayəsi, məhsulların mənşəyi və xidmət şərtləri mağaza sahibi ilə razılaşdırıldıqdan sonra bu bölməyə əlavə olunacaq.</p><a class="btn pri" href="#catalog">Məhsullara bax</a></div></section>`},
 contact(){seo("Əlaqə","WhatsApp ilə sifariş və əlaqə.");return `<section class="pg"><div class="w" style="max-width:720px"><h1>Bizimlə əlaqə</h1><div class="info" style="margin:0 0 22px"><span><b>WhatsApp:</b> sifariş və suallar üçün</span><span><b>Ünvan:</b> ${ADDR}</span><span><b>İş saatları:</b> ${HOURS}</span></div><a class="btn wa" target="_blank" rel="noopener" href="${wa("Salam!")}">WhatsApp ilə yazın</a></div></section>`},
 shipping(){seo("Çatdırılma və qaytarılma","Çatdırılma, ödəniş və qaytarılma şərtləri.");return `<section class="pg"><div class="w" style="max-width:720px"><h1>Çatdırılma və qaytarılma</h1><h3 style="margin:18px 0 6px">Çatdırılma</h3><p style="color:var(--mut)">Çatdırılma ərazisi, haqqı və təxmini müddət: [mağaza sahibi ilə razılaşdırılaraq əlavə olunacaq]. Hazırda çatdırılma şərtləri sifariş zamanı təsdiqlənir.</p><h3 style="margin:18px 0 6px">Ödəniş</h3><p style="color:var(--mut)">Mövcud ödəniş üsulları: [əlavə olunacaq]. Kartla onlayn ödəniş yalnız ödəniş provayderi qoşulduqdan sonra təklif olunacaq.</p><h3 style="margin:18px 0 6px">Qaytarılma və dəyişdirmə</h3><p style="color:var(--mut)">Müddət və şərtlər: [mağaza sahibi tərəfindən müəyyən ediləcək].</p></div></section>`},
-offer(){seo("Sayt təklifi","PLUS paketi: 899 AZN. Daxil olan və olmayan xidmətlər, ödəniş qaydası və təhvil şərtləri.");
+offer(){seo("Sayt təklifi","PLUS paketi: 899 AZN. Brendə uyğun dizayn, WooCommerce, səbət, sifariş və məhsul idarəetməsi.");
 const vd="https://wa.me/"+VD+"?text="+encodeURIComponent("Salam! Nüra Aksesuar demo saytı üçün PLUS paketi ilə maraqlanıram.");
-return `<section class="pg"><div class="w" style="max-width:900px"><h1>Bu sayt üçün təklif</h1><p style="color:var(--mut);margin-bottom:26px;max-width:60ch">PLUS paketi tam onlayn sifariş qəbul edə bilən e-commerce mağazasıdır: səbət, sifariş forması, variantlar, kuponlar və admin paneldə idarəetmə.</p>
-<div class="band" style="text-align:left;margin-bottom:38px"><div class="meta">PLUS paketi</div><div class="pr">899 AZN</div><p style="margin:8px 0 0;max-width:none">Layihə üzrə bir dəfəlik xidmət haqqı. Domen, hosting və üçüncü tərəf xərcləri daxil deyil.</p></div>
-<div class="of"><div><h3 style="font-size:26px;margin-bottom:14px">Qiymətə daxildir</h3>${L(["Brendə uyğunlaşdırılmış dizayn","Ana səhifə, məhsul kataloqu və kateqoriya səhifələri","Məhsul səhifələri, əlaqəli məhsullar","50 məhsula qədər ilkin yerləşdirmə","WooCommerce inteqrasiyası","Səbət sistemi","Checkout və sifariş forması: ad, telefon, ünvan","Sifarişlərin admin paneldə idarə edilməsi","Məhsul variantları (rəng, ölçü və s.)","Kupon və endirim kodları","Məhsul axtarışı","Stok vəziyyətinin göstərilməsi","WhatsApp ilə sifariş alternativi","Haqqımızda, Əlaqə, Çatdırılma və qaytarılma səhifələri","Əsas SEO sazlamaları","Analitika inteqrasiyası üçün hazırlıq","Həqiqi müştəri rəyləri üçün struktur","Mobil uyğunluq","WordPress admin panelində məhsul idarəetməsi"])}</div>
-<div><h3 style="font-size:26px;margin-bottom:14px">Qiymətə daxil deyil</h3>${L(["Domen","Hosting","Ödənişli WordPress temaları","Premium plugin və lisenziyalar","Ödəniş provayderinin komissiyaları","SMS və digər üçüncü tərəf xidmətləri","Xüsusi API və kuryer inteqrasiyaları","Müştəri hesabı və şəxsi kabinet (əlavə xidmət kimi qiymətləndirilir)"],"no")}<div class="info"><span><b>Kartla ödəniş:</b> uyğun ödəniş provayderi ilə inteqrasiya paketə daxildir, lakin real provayder hesabından, müqavilədən və API imkanlarından asılıdır. Provayder məlumatları olmadan işlək ödəniş vəd edilmir.</span><span>Domen və hosting sizin adınıza qeydiyyatdan keçir. Quraşdırma və texniki sazlamanı mən həyata keçirirəm.</span></div></div></div>
-<h3 style="font-size:26px;margin-bottom:14px">İş prosesi</h3>${L(["<b>Demo:</b> bu sayt kompüterdə və telefonda yoxlanır.","<b>Razılaşma:</b> paket, iş həcmi, şərtlər, müqavilə və ödəniş.","<b>WordPress-ə çevrilmə:</b> təsdiqlənmiş dizayn sizin domeninizdəki WordPress-də qurulur, WooCommerce funksiyaları inteqrasiya olunur.","<b>Test:</b> məhsullar, səbət, sifariş forması və mobil görünüş yoxlanır.","<b>Təhvil:</b> admin panelinin istifadəsi göstərilir və layihə təhvil verilir."])}
-<div class="of" style="margin-top:36px"><div><h3 style="font-size:26px;margin-bottom:14px">Ödəniş</h3>${L(["50% ilkin ödəniş","Qalan 50% üç aylıq hissə ilə ödənə bilər","Hissəli ödəniş yalnız əvvəlcədən razılaşdırılmış müqavilə və ödəniş cədvəli ilə tətbiq olunur"])}</div><div><h3 style="font-size:26px;margin-bottom:14px">Sizdən lazım olanlar</h3>${L(["Məhsul şəkilləri, adları, qiymətləri və təsvirləri","Domen və hosting (sizin adınıza)","Brend adı, loqo və əlaqə məlumatları","Ödəniş provayderi məlumatları (kartla ödəniş istənilərsə)"])}</div></div>
-<h3 style="font-size:26px;margin-bottom:14px">Təhvildən sonra</h3>${L(["7 günlük texniki dəstək: razılaşdırılmış funksiyalardakı texniki qüsurlar düzəldilir","Yeni funksiyalar və əlavə işlər ayrıca qiymətləndirilir","Hazırlanma müddəti və dizayn düzəlişlərinin sayı müqavilədə razılaşdırılır"])}
-<div class="info" style="margin:30px 0"><span>Bu səhifədəki sayt statik demodur: səbət brauzerdə müvəqqəti saxlanılır, sifariş mesajı WhatsApp-da açılır, kupon və variantlar nümayiş üçündür. Real məhsul bazası, sifarişlərin saxlanması və kuponlar WordPress/WooCommerce mərhələsində işləyəcək.</span><span>Fərdi dizayn, axtarış və filtrləmə, 100 məhsul və e-poçt bildirişləri üçün: PREMIUM — 1,499 AZN.</span></div>
-<a class="btn wa" target="_blank" rel="noopener" href="${vd}">Təklif üzrə yazın</a></div></section>`}};
+return `<section class="pg offer-page"><div class="w">
+<div class="offer-hero">
+ <div class="offer-hero-copy"><span class="offer-kicker">VALEH DIGITAL · E-COMMERCE SOLUTIONS</span>
+  <h1>Onlayn satışınızı <em>növbəti</em> səviyyəyə daşıyın.</h1>
+  <p class="offer-lead">PLUS paketi sosial şəbəkələrdə satış edən bizneslər üçün tam onlayn sifariş qəbul edə bilən, məhsulların rahat idarə olunduğu və müştəri alış prosesini sadələşdirən peşəkar e-commerce mağazasıdır.</p>
+  <div class="offer-points"><span>WooCommerce inteqrasiyası</span><span>50 məhsula qədər ilkin yerləşdirmə</span><span>Mobil uyğun dizayn</span></div>
+ </div>
+ <aside class="offer-price-card">
+  <div class="offer-price-top"><b>VALEH DIGITAL</b><span>PLUS · E-COMMERCE</span></div>
+  <div class="offer-price-label">Bir dəfəlik layihə haqqı</div>
+  <div class="offer-price-value">899 <small>AZN</small></div>
+  <p class="offer-price-desc">Biznesiniz üçün sifariş qəbul etməyə hazır onlayn mağaza infrastrukturu.</p>
+  <ul class="offer-price-list"><li>50 məhsula qədər ilkin yerləşdirmə</li><li>Səbət, checkout və sifariş idarəetməsi</li><li>Məhsul variantları, kuponlar və axtarış</li></ul>
+  <button type="button" class="offer-price-cta" onclick="document.getElementById('offer-details').scrollIntoView({behavior:'smooth'})">Paketin təfərrüatları <span>↓</span></button>
+ </aside>
+</div>
+
+<div class="offer-heading" id="offer-details"><h2>PLUS paketinin tərkibi</h2><p>Satış prosesinin əsas mərhələləri bir sistemdə — məhsul təqdimatından sifarişin idarə edilməsinə qədər.</p></div>
+<div class="offer-panels">
+ <article class="offer-panel included"><h3>Qiymətə daxildir</h3>${L(["Brendə uyğunlaşdırılmış dizayn","Ana səhifə, məhsul kataloqu və kateqoriya səhifələri","Məhsul səhifələri və əlaqəli məhsullar","50 məhsula qədər ilkin yerləşdirmə","WooCommerce inteqrasiyası","Səbət sistemi","Checkout və sifariş forması: ad, telefon, ünvan","Sifarişlərin admin paneldə idarə edilməsi","Məhsul variantları (rəng, ölçü və s.)","Kupon və endirim kodları","Məhsul axtarışı","Stok vəziyyətinin göstərilməsi","WhatsApp ilə sifariş alternativi","Haqqımızda, Əlaqə, Çatdırılma və qaytarılma səhifələri","Əsas SEO sazlamaları","Analitika inteqrasiyası üçün hazırlıq","Həqiqi müştəri rəyləri üçün struktur","Mobil uyğunluq","WordPress admin panelində məhsul idarəetməsi"])}</article>
+ <article class="offer-panel excluded"><h3>Qiymətə daxil deyil</h3>${L(["Domen","Hosting","Ödənişli WordPress temaları","Premium plugin və lisenziyalar","Ödəniş provayderinin komissiyaları","SMS və digər üçüncü tərəf xidmətləri","Xüsusi API və kuryer inteqrasiyaları","Müştəri hesabı və şəxsi kabinet (əlavə xidmət kimi qiymətləndirilir)"],"no")}
+  <div class="offer-note"><span><b>Kartla ödəniş:</b> uyğun ödəniş provayderi ilə inteqrasiya paketə daxildir, lakin real provayder hesabından, müqavilədən və API imkanlarından asılıdır. Provayder məlumatları olmadan işlək ödəniş vəd edilmir.</span><span>Domen və hosting sizin adınıza qeydiyyatdan keçir. Quraşdırma və texniki sazlamanı mən həyata keçirirəm.</span></div>
+ </article>
+</div>
+
+<div class="offer-process"><h2>Layihə necə həyata keçirilir?</h2><div class="offer-steps">
+ <div class="offer-step"><b>Demo</b><span>Sayt kompüterdə və telefonda yoxlanır, ilkin görünüş və funksiyalar nümayiş etdirilir.</span></div>
+ <div class="offer-step"><b>Razılaşma</b><span>Paket, iş həcmi, şərtlər, müqavilə və ödəniş qaydası dəqiqləşdirilir.</span></div>
+ <div class="offer-step"><b>WordPress qurulması</b><span>Təsdiqlənmiş dizayn sizin domeninizdəki WordPress-ə keçirilir və WooCommerce inteqrasiya olunur.</span></div>
+ <div class="offer-step"><b>Test</b><span>Məhsullar, səbət, sifariş forması və mobil görünüş yoxlanılır.</span></div>
+ <div class="offer-step"><b>Təhvil</b><span>Admin panelinin istifadəsi göstərilir və layihə təhvil verilir.</span></div>
+</div></div>
+
+<div class="offer-duo">
+ <article class="offer-panel"><h3>Ödəniş qaydası</h3>${L(["50% ilkin ödəniş","Qalan 50% üç aylıq hissə ilə ödənə bilər","Hissəli ödəniş yalnız əvvəlcədən razılaşdırılmış müqavilə və ödəniş cədvəli ilə tətbiq olunur"])}</article>
+ <article class="offer-panel"><h3>Sizdən lazım olanlar</h3>${L(["Məhsul şəkilləri, adları, qiymətləri və təsvirləri","Domen və hosting (sizin adınıza)","Brend adı, loqo və əlaqə məlumatları","Ödəniş provayderi məlumatları (kartla ödəniş istənilərsə)"])}</article>
+</div>
+
+<div class="offer-after"><h3>Təhvildən sonra</h3>${L(["7 günlük texniki dəstək: razılaşdırılmış funksiyalardakı texniki qüsurlar düzəldilir","Yeni funksiyalar və əlavə işlər ayrıca qiymətləndirilir","Hazırlanma müddəti və dizayn düzəlişlərinin sayı müqavilədə razılaşdırılır"])}</div>
+
+<div class="offer-disclaimer"><span>Bu səhifədəki sayt statik demodur: səbət brauzerdə müvəqqəti saxlanılır, sifariş mesajı WhatsApp-da açılır, kupon və variantlar nümayiş üçündür. Real məhsul bazası, sifarişlərin saxlanması və kuponlar WordPress/WooCommerce mərhələsində işləyəcək.</span><span><strong>Genişləndirilmiş alternativ:</strong> Fərdi dizayn, axtarış və filtrləmə, 100 məhsul və e-poçt bildirişləri üçün PREMIUM — 1,499 AZN.</span></div>
+
+<div class="offer-bottom"><div class="offer-bottom-copy"><h2>Layihənizi müzakirə edək.</h2><p>PLUS paketi və mağazanız üçün uyğun həll barədə ətraflı məlumat almaq üçün əlaqə saxlayın.</p></div><a class="btn" target="_blank" rel="noopener" href="${vd}">Təklif üzrə yazın&nbsp; ↗</a></div>
+</div></section>`}};
 const SC=[
 ["uzuk","Üzüklər","https://images.unsplash.com/photo-1562249003-f713a2af1096?auto=format&fit=crop&w=1200&q=85"],
 ["sirga","Sırğalar","https://images.unsplash.com/photo-1727791762060-978deff14028?auto=format&fit=crop&w=1200&q=85"],
