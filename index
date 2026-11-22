@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nüra Aksesuar: bijuteriya və aksesuarlar</title>
+<meta name="description" content="Zərif bijuteriya və aksesuarlar. Məhsulu seçin, səbətə əlavə edin və sifarişi tamamlayın.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,600;1,6..96,500&family=Manrope:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f7f3ee;--sf:#fff;--ink:#15101a;--mut:#6b6670;--ac:#7a2e3a;--gold:#c0974f;--ln:#e6e1d8;--ok:#1f7a4d;--dk:#120d16;color-scheme:light}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.65 Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,.logo{font-family:"Bodoni Moda",Georgia,serif;font-weight:500;line-height:1.12}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.w{max-width:1200px;margin:0 auto;padding:0 20px}.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(247,243,238,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--ln);view-transition-name:hdr;transition:background .35s,border-color .35s,color .35s}
+.hd{display:flex;align-items:center;gap:14px;height:64px}.logo{font-size:30px;margin-right:auto;letter-spacing:.02em}.logo i{color:var(--gold);font-style:italic}
+nav{display:flex;gap:26px;font-size:15px}nav a{color:var(--mut);padding:8px 0;white-space:nowrap;position:relative;transition:color .2s}nav a::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s}nav a:hover,nav a.on{color:var(--ink)}nav a:hover::after,nav a.on::after{transform:scaleX(1)}nav a.hl{color:var(--ac);font-weight:600}
+.ico{background:none;border:0;color:inherit;font:500 14px Manrope,sans-serif;cursor:pointer;min-height:44px;padding:0 6px;display:inline-flex;align-items:center;gap:6px}
+#cn{background:var(--ac);color:#fff;border-radius:99px;min-width:20px;height:20px;display:inline-grid;place-items:center;font-size:11px}
+body.top header{position:fixed;left:0;right:0;background:transparent;border-color:transparent;backdrop-filter:none;color:#f4efe8}
+body.top nav a{color:rgba(244,239,232,.72)}body.top nav a:hover,body.top nav a.on{color:#fff}body.top nav a.hl{color:var(--gold)}
+#sp{border-top:1px solid var(--ln);background:var(--sf);padding:12px 0;color:var(--ink)}#sp[hidden]{display:none}#sp form{display:flex;gap:10px}
+input,select,textarea{font:inherit;color:var(--ink)}
+.f,#sp input{min-height:46px;padding:0 14px;border:1px solid var(--ln);background:var(--sf);border-radius:2px;width:100%}textarea.f{padding:10px 14px;min-height:80px}#sp input{flex:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 28px;border-radius:2px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:600 15px/1 Manrope,sans-serif;cursor:pointer;transition:background .25s,color .25s,transform .25s,border-color .25s}
+.btn:hover{background:var(--ink);color:var(--bg);transform:translateY(-2px)}.btn.pri{background:var(--ink);color:var(--bg)}.btn.pri:hover{background:var(--ac);border-color:var(--ac)}
+.btn.wa{background:var(--ok);border-color:var(--ok);color:#fff}.btn.wa:hover{background:#17623d}.btn.sm{min-height:42px;padding:0 16px;font-size:14px;width:100%}.btn[disabled]{opacity:.45;cursor:not-allowed}
+section{padding:64px 0}
+h2.t{font-size:clamp(30px,5vw,46px);text-align:center;margin-bottom:38px}h2.t::after{content:"";display:block;width:44px;height:1px;background:var(--gold);margin:14px auto 0}
+.eb{display:inline-flex;align-items:center;gap:12px;font:600 12px Manrope,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}.eb::before{content:"";width:34px;height:1px;background:var(--gold)}
+/* art placeholder */
+.art{position:relative;aspect-ratio:4/5;border-radius:2px;display:grid;place-items:center;overflow:hidden}
+.art svg{fill:none;stroke:#7a2e3a;stroke-width:1.5;stroke-linecap:round;width:50%;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.card:hover .art svg,.card:hover .art img{transform:scale(1.06)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 14px}
+.card{display:flex;flex-direction:column;gap:6px;text-align:center}.card h3{font-size:21px}.price{font-weight:600}.meta{font-size:13px;color:var(--mut)}
+.badge{position:absolute;top:10px;left:10px;z-index:2;background:var(--ink);color:var(--bg);font:600 11px Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase;padding:5px 10px}
+.st{font-size:13px;color:var(--ok)}.st.no{color:var(--mut)}
+.empty{border:1px dashed var(--ln);padding:22px;color:var(--mut);border-radius:2px;text-align:center}
+.band{background:var(--sf);border:1px solid var(--ln);padding:44px 22px;text-align:center}.band p{color:var(--mut);margin:0 auto 20px;max-width:50ch}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:18px}.chip{flex:none;min-height:40px;padding:0 16px;border:1px solid var(--ln);border-radius:99px;display:inline-flex;align-items:center;font-size:14px;background:var(--sf);color:var(--ink);cursor:pointer;transition:background .2s,color .2s}.chip:hover{border-color:var(--ink)}.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.pg{padding-top:44px}.pg h1{font-size:clamp(34px,6vw,54px);margin-bottom:18px}.crumb{font-size:14px;color:var(--mut);display:block;margin-bottom:16px}
+.pd{display:grid;gap:28px}.pd h1{font-size:clamp(32px,5vw,46px)}
+.opt{margin:14px 0}.opt label{display:block;font-weight:600;font-size:14px;margin-bottom:6px}.qty{display:inline-flex;border:1px solid var(--ln);background:var(--sf)}.qty button{width:40px;height:44px;border:0;background:none;font-size:18px;cursor:pointer;color:inherit}.qty span{min-width:34px;display:grid;place-items:center}
+.info{border:1px solid var(--ln);background:var(--sf);padding:16px;font-size:14px;color:var(--mut);display:grid;gap:6px;margin-top:16px}.info a{color:var(--ac);text-decoration:underline}
+details{border-top:1px solid var(--ln);padding:14px 0}details:last-of-type{border-bottom:1px solid var(--ln)}summary{cursor:pointer;font-weight:600}details p{color:var(--mut);margin-top:8px}
+.cl{display:grid;grid-template-columns:72px 1fr auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--ln)}.cl .art{aspect-ratio:1}.cl .art svg{width:60%}.rm{background:none;border:0;color:var(--mut);text-decoration:underline;cursor:pointer;font:inherit;font-size:13px}
+.two{display:grid;gap:30px}.box{background:var(--sf);border:1px solid var(--ln);padding:20px}.tr{display:flex;justify-content:space-between;padding:6px 0;gap:12px}.tr.b{border-top:1px solid var(--ln);margin-top:6px;padding-top:12px;font-weight:600}
+.fl{display:grid;gap:12px}.fl label{font-size:14px;font-weight:600;display:grid;gap:6px}.er{color:#a11d2c;font-size:13px;min-height:1em}
+.of{display:grid;gap:30px;margin-bottom:34px}.ck{list-style:none;padding:0;display:grid;gap:9px}.ck li{padding-left:26px;position:relative;font-size:15px}.ck li::before{content:"\2713";position:absolute;left:0;color:var(--ac)}.ck.no li::before{content:"\2014";color:var(--mut)}.pr{font:500 clamp(48px,10vw,72px)/1 "Bodoni Moda",serif;margin:6px 0}
+footer{background:var(--dk);color:#a9a1ad;padding:56px 0 96px;font-size:14px}footer .w{display:grid;gap:28px}footer h3{font-size:22px;color:#f4efe8;margin-bottom:10px}footer ul{list-style:none;padding:0;display:grid;gap:6px}footer a:hover{color:var(--gold)}
+.fab{position:fixed;right:16px;bottom:16px;z-index:25;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+#ts{position:fixed;left:50%;bottom:84px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;font-size:14px;z-index:50;opacity:0;transition:opacity .25s;pointer-events:none}#ts.s{opacity:1}
+/* HERO */
+.hero{position:relative;min-height:100svh;background:var(--dk);color:#f4efe8;overflow:hidden;display:grid;align-items:center;isolation:isolate}
+.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;z-index:-3}
+.aur{position:absolute;inset:-20%;z-index:-4;background:radial-gradient(40% 40% at 25% 30%,rgba(122,46,58,.65),transparent 70%),radial-gradient(35% 35% at 75% 35%,rgba(192,151,79,.4),transparent 70%),radial-gradient(45% 45% at 55% 85%,rgba(90,40,90,.45),transparent 70%);animation:aur 18s ease-in-out infinite alternate;filter:blur(20px)}
+@keyframes aur{to{transform:translate3d(4%,-3%,0) rotate(6deg) scale(1.08)}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(18,13,22,.55),transparent 28%,transparent 60%,rgba(18,13,22,.85)),radial-gradient(90% 70% at 50% 50%,transparent 40%,rgba(18,13,22,.5))}
+.hero .w{display:grid;gap:30px;align-items:center;padding-top:110px;padding-bottom:110px}
+.hero h1{font-size:clamp(46px,10vw,112px);letter-spacing:-.01em;margin-bottom:22px}.hero h1 em{color:var(--gold);font-style:italic}
+.hero h1 .wd{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em}.hero h1 .wd>span{display:inline-block;animation:up 1.1s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i)*.12s + .15s)}
+@keyframes up{from{transform:translateY(110%) rotate(3deg)}}
+.hero p.lead{color:#cdc5cf;max-width:44ch;margin-bottom:30px;font-size:18px;animation:fade 1s .8s both}.hero .row{animation:fade 1s 1s both}.hero .eb{animation:fade 1s .1s both}
+@keyframes fade{from{opacity:0;transform:translateY(16px)}}
+.hero .btn{border-color:#f4efe8;color:#f4efe8}.hero .btn.pri{background:#f4efe8;color:var(--dk)}.hero .btn:hover,.hero .btn.pri:hover{background:var(--gold);border-color:var(--gold);color:var(--dk)}
+.scene{position:relative;aspect-ratio:1;width:100%;max-width:320px;margin:0 auto;animation:fade 1.4s .6s both}
+.scene::before{content:"";position:absolute;inset:4%;border:1px solid rgba(192,151,79,.35);border-radius:50%;animation:spin 40s linear infinite}
+.scene::after{content:"";position:absolute;inset:-4%;border:1px dashed rgba(192,151,79,.2);border-radius:50%;animation:spin 70s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.scene svg{position:absolute;inset:12%;width:76%;height:76%;fill:none;stroke:var(--gold);stroke-width:.8;stroke-linecap:round;stroke-linejoin:round;opacity:0;transition:opacity .9s;filter:drop-shadow(0 0 8px rgba(192,151,79,.5))}
+.scene svg.on{opacity:1}.scene svg.on *{animation:draw 2.8s cubic-bezier(.4,.1,.2,1) forwards}@keyframes draw{to{stroke-dashoffset:0}}
+.sc-cap{display:flex;justify-content:center;gap:10px;align-items:baseline;margin-top:18px;font:500 24px "Bodoni Moda",serif}.sc-cap span{font:500 13px Manrope,sans-serif;color:#cdc5cf}.sc-cap a{border-bottom:1px solid var(--gold)}
+.dots{display:flex;justify-content:center;gap:8px;margin-top:14px}.dots i{width:22px;height:2px;background:rgba(244,239,232,.25);transition:background .3s,width .3s}.dots i.on{background:var(--gold);width:40px}
+.cue{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);display:grid;justify-items:center;gap:8px;font:600 11px Manrope,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#cdc5cf}.cue::after{content:"";width:1px;height:38px;background:linear-gradient(var(--gold),transparent);animation:cue 2s ease-in-out infinite;transform-origin:top}
+@keyframes cue{0%{transform:scaleY(0)}60%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+/* marquee */
+.mq{background:var(--ink);color:#f4efe8;overflow:hidden;padding:18px 0;border-block:1px solid #2a2230}
+.mq div{display:flex;width:max-content;animation:mq 32s linear infinite}.mq span{font:italic 500 26px "Bodoni Moda",serif;padding:0 26px;white-space:nowrap;display:inline-flex;align-items:center;gap:52px}.mq span::after{content:"\25C6";font-size:10px;color:var(--gold)}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* intro stats */
+.intro{display:grid;gap:26px}.intro p{font:500 clamp(24px,3.6vw,38px)/1.35 "Bodoni Moda",serif;max-width:30ch}.intro p em{color:var(--ac)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;border-top:1px solid var(--gold);padding-top:18px}.stats b{display:block;font:500 clamp(34px,6vw,56px)/1 "Bodoni Moda",serif;color:var(--ac)}.stats span{font-size:13px;color:var(--mut)}
+/* category showcase */
+.cats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.cat{position:relative;display:block;overflow:hidden}.cat .art{aspect-ratio:1;height:100%}.cat .art svg{width:46%}
+.cat:hover .art svg{transform:scale(1.1) rotate(-3deg)}
+.cat .cp{position:absolute;inset:auto 0 0;padding:44px 16px 16px;background:linear-gradient(transparent,rgba(18,13,22,.72));color:#fff;display:flex;justify-content:space-between;align-items:end;gap:8px}
+.cat .cp b{font:500 24px "Bodoni Moda",serif}.cat .cp small{font-size:12px;opacity:.8;display:block}.cat .cp i{font-style:normal;width:38px;height:38px;border:1px solid rgba(255,255,255,.6);border-radius:50%;display:grid;place-items:center;transition:background .3s,transform .3s}.cat:hover .cp i{background:var(--gold);border-color:var(--gold);transform:translateX(4px)}
+/* campaign */
+.camp{position:relative;background:var(--dk);color:#f4efe8;padding:0;overflow:hidden;isolation:isolate}
+.camp .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.45;z-index:-2}
+.camp .aur{z-index:-3;opacity:.8}
+.camp .w{padding-top:90px;padding-bottom:90px;display:grid;gap:22px;justify-items:start}
+.camp h2{font-size:clamp(38px,7vw,84px);max-width:14ch}.camp h2 em{color:var(--gold)}.camp p{max-width:46ch;color:#cdc5cf;font-size:17px}
+.camp .btn{border-color:#f4efe8;color:#f4efe8}.camp .btn:hover{background:var(--gold);border-color:var(--gold);color:var(--dk)}
+.fx{position:absolute;right:6%;top:50%;width:min(34vw,360px);transform:translateY(-50%);fill:none;stroke:var(--gold);stroke-width:.6;opacity:.5;z-index:-1;animation:flt 7s ease-in-out infinite alternate}
+@keyframes flt{to{transform:translateY(-54%) rotate(4deg)}}
+/* snap */
+.snap{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;scrollbar-width:thin}.snap .card{flex:0 0 72%;scroll-snap-align:start}
+/* steps */
+.steps{list-style:none;padding:0;display:grid;gap:18px;counter-reset:s}.steps li{counter-increment:s;border-top:1px solid var(--gold);padding-top:14px}.steps li::before{content:"0" counter(s);font:500 44px "Bodoni Moda",serif;color:var(--ac);display:block;line-height:1.1}.steps b{display:block;font:500 22px "Bodoni Moda",serif}.steps span{color:var(--mut);font-size:15px}
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--d,0)*.08s)}.rv.in{opacity:1;transform:none}
+::view-transition-group(hdr){animation-duration:0s}::view-transition-old(root),::view-transition-new(root){animation-duration:.4s}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.hero h1 .wd>span{transform:none}.scene svg.on{opacity:1}}
+@media(max-width:820px){.hd{flex-wrap:wrap;height:auto;padding-top:10px}nav{order:3;width:100%;flex-wrap:wrap;gap:0 18px;font-size:14px;padding-bottom:6px}.hero .w{padding-top:170px}.fx{display:none}}
+@media(min-width:760px){.hero .w{grid-template-columns:1.25fr 1fr}.scene{max-width:440px;margin:0 0 0 auto}.sc-cap,.dots{justify-content:flex-end}.snap .card{flex-basis:calc(30% - 12px)}.steps{grid-template-columns:repeat(3,1fr)}.grid{grid-template-columns:repeat(4,1fr)}.cats{grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,minmax(0,1fr))}.cats .cat:first-child{grid-column:span 2;grid-row:span 2}.cats .cat:first-child .art{aspect-ratio:auto}.cats .cat:first-child .art svg{width:36%}.intro{grid-template-columns:1.3fr 1fr;align-items:end}.pd{grid-template-columns:1fr 1fr;gap:48px;align-items:start}.two{grid-template-columns:1.4fr 1fr;align-items:start}.of{grid-template-columns:1fr 1fr}footer .w{grid-template-columns:2fr 1fr 1fr}}
+</style>
+</head>
+<body class="top">
+<header><div class="w hd"><a class="logo" href="#home">Nüra<i>.</i></a>
+<nav id="nav"><a href="#home">Ana səhifə</a><a href="#catalog">Məhsullar</a><a href="#about">Haqqımızda</a><a href="#contact">Əlaqə</a><a href="#shipping">Çatdırılma</a><a class="hl" href="#offer">Təklif</a></nav>
+<button class="ico" onclick="tgS()" aria-label="Axtar">Axtar</button><a class="ico" href="#cart">Səbət <span id="cn">0</span></a></div>
+<div id="sp" hidden><div class="w"><form onsubmit="return doS(event)" role="search"><input id="qi" type="search" placeholder="Məhsul axtarın" aria-label="Axtarış"><button class="btn pri" type="submit">Axtar</button></form></div></div></header>
+<main id="app"></main>
+<footer><div class="w"><div><h3>Nüra Aksesuar</h3><ul><li id="fa"></li><li id="fh"></li></ul></div><div><h3>Məlumat</h3><ul><li><a href="#shipping">Çatdırılma və qaytarılma</a></li><li><a href="#about">Haqqımızda</a></li><li><a href="#contact">Əlaqə</a></li></ul></div><div><h3>Sifariş</h3><ul><li>Səbət və ya WhatsApp ilə</li><li>Demo layihə: məlumatlar nümunədir</li></ul></div></div></footer>
+<a class="btn wa fab" id="fab" target="_blank" rel="noopener">WhatsApp</a><div id="ts" role="status"></div>
+<script>
+/* KONFİQURASİYA: nömrələr ölkə kodu ilə, + və boşluqsuz */
+const WA="994XXXXXXXXX",VD="994XXXXXXXXX",ADDR="Bakı, Azərbaycan (ünvan əlavə olunacaq)",HOURS="Hər gün 10:00–20:00 (nümunə)";
+const CATS={sirga:"Sırğalar",boyun:"Boyunbağılar",bilek:"Biləziklər",uzuk:"Üzüklər",dest:"Dəstlər"};
+const OPT={uzuk:{"Ölçü":["16","17","18","19"]},boyun:{"Rəng":["Qızılı tonlu","Gümüşü tonlu"]},bilek:{"Rəng":["Qızılı tonlu","Gümüşü tonlu"]}};
+/* WooCommerce sahələri: id, name, category, price, stock_status, short_description, featured, new. Variantlar kateqoriyaya görə OPT-dadır (demo). */
+const P=[[1,"Damcı sırğa","sirga",18,1,"Zərif damcı formalı sırğa. Gündəlik və xüsusi günlər üçün.",1,0],[2,"Halqa sırğa","sirga",15,1,"Sadə və geyimə uyğun halqa sırğa.",0,1],[3,"Mirvari tipli sırğa","sirga",22,1,"Klassik mirvari görünüşlü sırğa.",1,0],[4,"Mini sırğa dəsti","sirga",16,0,"Üç cüt kiçik sırğa bir dəstdə.",0,1],
+[5,"İncə zəncirli boyunbağı","boyun",24,1,"İncə zəncir və kiçik sallanan detal.",1,0],[6,"Medalyon boyunbağı","boyun",28,1,"Minimalist medalyon, gündəlik istifadə üçün.",0,0],[7,"Qat-qat boyunbağı","boyun",32,0,"İki qatlı zəncir, geyimə tamamlayıcı.",0,1],[8,"Choker","boyun",20,1,"Boyuna yaxın duran şık choker.",0,1],
+[9,"İncə biləzik","bilek",14,1,"Qola yüngül oturan incə biləzik.",1,0],[10,"Zəncir biləzik","bilek",19,1,"Tənzimlənən ölçülü zəncir biləzik.",0,0],[11,"Qalın biləzik","bilek",26,0,"Diqqət çəkən qalın dizaynlı biləzik.",0,1],[12,"Üçlü biləzik dəsti","bilek",30,1,"Bir-birinə uyğun üç biləzik.",0,0],
+[13,"Sadə üzük","uzuk",12,1,"Hamar və minimalist üzük.",0,0],[14,"Daşlı üzük","uzuk",21,1,"Mərkəzdə kiçik daşlı üzük.",1,0],[15,"Qat üzük","uzuk",17,0,"Bir neçə sətirli müasir üzük.",0,1],[16,"Tənzimlənən üzük","uzuk",13,1,"Ölçüsü tənzimlənən üzük.",0,1],
+[17,"Hədiyyə dəsti: sırğa və boyunbağı","dest",38,1,"Hədiyyə üçün uyğun iki parçalı dəst.",1,0],[18,"Gündəlik dəst","dest",34,1,"Sırğa, biləzik və üzük birlikdə.",0,0],[19,"Xüsusi gün dəsti","dest",46,0,"Tədbirlər üçün ahəngdar dəst.",0,1],[20,"Mini hədiyyə dəsti","dest",29,1,"Kiçik hədiyyə qutusuna uyğun dəst.",0,0]
+].map(a=>({id:a[0],name:a[1],cat:a[2],price:a[3],stock:a[4],desc:a[5],feat:a[6],isNew:a[7]}));
+const REVIEWS=[]; /* Yalnız real müştəri rəyləri: {pid,author,stars,text}. Boş qalır. */
+const G={sirga:'<circle cx="38" cy="28" r="3"/><path d="M38 31v12"/><circle cx="38" cy="53" r="9"/><circle cx="64" cy="28" r="3"/><path d="M64 31v12"/><circle cx="64" cy="53" r="9"/>',boyun:'<path d="M18 24Q50 84 82 24"/><circle cx="50" cy="62" r="7"/>',bilek:'<ellipse cx="50" cy="55" rx="28" ry="19"/><ellipse cx="50" cy="55" rx="21" ry="12"/>',uzuk:'<circle cx="50" cy="60" r="18"/><path d="M42 40l8-12 8 12z"/>',dest:'<circle cx="34" cy="62" r="11"/><path d="M66 26v14"/><circle cx="66" cy="52" r="9"/><path d="M22 30Q40 52 58 30"/>'};
+const $=s=>document.querySelector(s),app=$("#app"),esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt=n=>(Math.round(n*100)/100).toString().replace(".",",")+" AZN";
+const art=(p,c)=>{c=p?p.cat:c;const h=[340,28,350,24,10][Object.keys(CATS).indexOf(c)]+(p?p.id%4*4:0);return `<div class="art" style="background:linear-gradient(160deg,hsl(${h} 38% 92%),hsl(${h} 30% 78%))">${p&&p.isNew?'<span class="badge">Yeni</span>':""}<svg viewBox="0 0 100 100" aria-hidden="true">${G[c]}</svg>${p?`<img src="images/p-${p.id}.jpg" alt="${esc(p.name)}" loading="lazy" onerror="this.remove()">`:""}</div>`};
+const base=()=>location.href.split("#")[0],pu=p=>base()+"#p-"+p.id;
+const wa=(t)=>"https://wa.me/"+WA+(t?"?text="+encodeURIComponent(t):"");
+const stk=p=>p.stock?'<span class="st">Mövcuddur</span>':'<span class="st no">Sifarişlə hazırlanır</span>';
+const card=(p,i)=>`<article class="card rv" style="--d:${(i||0)%4}"><a href="#p-${p.id}" aria-label="${esc(p.name)}">${art(p)}</a><div><div class="meta">${CATS[p.cat]}</div><h3><a href="#p-${p.id}">${p.name}</a></h3><div class="price">${fmt(p.price)}</div></div>${stk(p)}<a class="btn sm" href="#p-${p.id}">Seç və səbətə at</a></article>`;
+const seo=(t,d)=>{document.title=t+" | Nüra Aksesuar";$('meta[name=description]').content=d};
+let C=[],cp="",q="",sort="def";try{C=JSON.parse(localStorage.getItem("nc2")||"[]")}catch(e){}C=C.filter(i=>P.find(p=>p.id==i.id)&&i.q>0);
+const save=()=>{try{localStorage.setItem("nc2",JSON.stringify(C))}catch(e){}};
+const prod=i=>P.find(p=>p.id==i.id),otx=o=>Object.values(o||{}).join(", ");
+const sub=()=>C.reduce((a,i)=>a+prod(i).price*i.q,0),disc=()=>cp==="DEMO10"?sub()*.1:0,total=()=>sub()-disc();
+const toast=t=>{const e=$("#ts");e.textContent=t;e.classList.add("s");clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove("s"),1700)};
+const upd=()=>{$("#cn").textContent=C.reduce((a,i)=>a+i.q,0)};
+function addC(id,o,n){const k=JSON.stringify(o),f=C.find(i=>i.id==id&&JSON.stringify(i.o)===k);f?f.q+=n:C.push({id,o,q:n});save();upd();toast("Səbətə əlavə olundu")}
+function readO(p){const o={};let ok=true;for(const [k,v] of Object.entries(OPT[p.cat]||{})){const s=$("#o-"+k);if(!s.value){ok=false;s.focus();toast(k+" seçin");break}o[k]=s.value}return ok?o:null}
+let pq=1;const pqty=d=>{pq=Math.max(1,pq+d);$("#pq").textContent=pq};
+function addP(id){const p=P.find(x=>x.id==id),o=readO(p);if(o)addC(id,o,pq)}
+function waP(id){const p=P.find(x=>x.id==id),o=readO(p);if(!o)return;const t=`Salam! "${p.name}" məhsulunu sifariş etmək istəyirəm.${otx(o)?"\nVariant: "+otx(o):""}\nSay: ${pq}\nQiymət: ${fmt(p.price)}\nLink: ${pu(p)}`;window.open(wa(t),"_blank","noopener")}
+function cq(i,d){C[i].q+=d;if(C[i].q<1)C.splice(i,1);save();upd();route()}
+function applyC(){const v=$("#cc").value.trim().toUpperCase();if(v==="DEMO10"){cp=v;toast("Demo kupon tətbiq olundu")}else{cp="";toast(v?"Kupon tapılmadı":"Kod daxil edin")}route()}
+const lines=()=>C.map((i,n)=>{const p=prod(i);return `${n+1}. ${p.name}${otx(i.o)?" ("+otx(i.o)+")":""} × ${i.q} — ${fmt(p.price*i.q)}\n${pu(p)}`}).join("\n");
+const totTxt=()=>`${disc()?"Kupon ("+cp+"): -"+fmt(disc())+"\n":""}Cəmi: ${fmt(total())}`;
+function waCart(){if(!C.length)return;window.open(wa("Salam! Aşağıdakı məhsulları sifariş etmək istəyirəm:\n\n"+lines()+"\n\n"+totTxt()),"_blank","noopener")}
+let lastMsg="";
+function place(ev){ev.preventDefault();const g=id=>$("#"+id).value.trim(),n=g("nm"),ph=g("ph"),ad=g("ad"),ct=g("ct");let e="";
+if(n.length<3)e="Ad və soyadı yazın.";else if(ph.replace(/\D/g,"").length<9)e="Telefon nömrəsini düzgün yazın.";else if(ad.length<5)e="Çatdırılma ünvanını yazın.";
+$("#er").textContent=e;if(e)return false;
+lastMsg=`Salam! Sifariş vermək istəyirəm:\n\n${lines()}\n\n${totTxt()}\n\nAd: ${n}\nTelefon: ${ph}\nÜnvan: ${ad}${ct?", "+ct:""}${g("nt")?"\nQeyd: "+g("nt"):""}`;
+window.open(wa(lastMsg),"_blank","noopener");location.hash="#done";return false}
+function tgS(){const s=$("#sp");s.hidden=!s.hidden;if(!s.hidden)$("#qi").focus()}
+function doS(ev){ev.preventDefault();q=$("#qi").value.trim();$("#sp").hidden=true;if(location.hash==="#catalog")route();else location.hash="#catalog";return false}
+const list=cat=>{const ql=q.toLocaleLowerCase("az");let l=P.filter(p=>(!cat||p.cat===cat)&&(!ql||(p.name+" "+p.desc).toLocaleLowerCase("az").includes(ql)));if(sort==="a")l=[...l].sort((a,b)=>a.price-b.price);if(sort==="d")l=[...l].sort((a,b)=>b.price-a.price);return l};
+const L=(a,c)=>`<ul class="ck ${c||""}">${a.map(x=>`<li>${x}</li>`).join("")}</ul>`;
+const words=(s,st)=>s.split(" ").map((w,i)=>{const em=w[0]==="*";return `<span class="wd"><span style="--i:${i+st}">${em?`<em>${w.slice(1)}</em>`:w}</span></span>`}).join(" ");
+const V={
+home(){seo("Bijuteriya və aksesuarlar","Zərif bijuteriya və aksesuarlar. Məhsulu seçin, səbətə əlavə edin və sifarişi tamamlayın.");
+const mq=Object.values(CATS).map(x=>`<span>${x}</span>`).join("");
+return `<section class="hero" style="padding:0"><div class="aur"></div><video class="bg" src="videos/hero.mp4" autoplay muted loop playsinline aria-hidden="true" onerror="this.remove()"></video><img class="bg" src="images/hero.jpg" alt="" onerror="this.remove()"><div class="w"><div><span class="eb">Bijuteriya və aksesuarlar</span><h1>${words("Zərif detallar, *öz üslubunuz",0)}</h1><p class="lead">Gündəlik və xüsusi günlər üçün seçilmiş aksesuarlar. Məhsulu seçin, səbətə əlavə edin və sifarişi bir neçə addımda tamamlayın.</p><div class="row"><a class="btn pri" href="#catalog">Məhsullara bax</a><a class="btn" target="_blank" rel="noopener" href="${wa("Salam! Məhsullarınız haqqında məlumat almaq istəyirəm.")}">WhatsApp ilə yazın</a></div></div><div><div class="scene" id="scn" aria-hidden="true"></div><div class="sc-cap"><a id="sc" href="#c-uzuk">Üzüklər</a><span>kateqoriyaya bax</span></div><div class="dots" id="dts" aria-hidden="true"></div></div></div><div class="cue">Aşağı</div></section>
+<div class="mq" aria-hidden="true"><div>${mq.repeat(4)}</div></div>
+<section><div class="w intro"><p class="rv">Hər aksesuar <em>sadə</em> seçim, aydın qiymət və rahat sifariş üçün seçilib.</p><div class="stats rv" style="--d:2"><div><b>${P.length}</b><span>məhsul</span></div><div><b>${Object.keys(CATS).length}</b><span>kateqoriya</span></div><div><b>${P.filter(p=>p.stock).length}</b><span>mövcud</span></div></div></div></section>
+<section style="padding-top:0"><div class="w"><h2 class="t rv">Kateqoriyalar</h2><div class="cats">${Object.entries(CATS).map(([k,v],i)=>`<a class="cat rv" style="--d:${i}" href="#c-${k}">${art(0,k)}<div class="cp"><div><b>${v}</b><small>${P.filter(p=>p.cat===k).length} məhsul</small></div><i>→</i></div></a>`).join("")}</div></div></section>
+<section class="camp" style="padding:0"><div class="aur"></div><video class="bg" src="videos/sets.mp4" autoplay muted loop playsinline aria-hidden="true" onerror="this.remove()"></video><svg class="fx" viewBox="0 0 200 200" aria-hidden="true"><circle cx="66" cy="136" r="32"/><circle cx="66" cy="136" r="25"/><path d="M42 82Q86 150 126 82"/><path d="M142 36v30"/><path d="M142 66l-16 24 16 42 16-42z"/></svg><div class="w"><span class="eb rv">Hədiyyə üçün</span><h2 class="rv">Seçim <em>asanlaşır</em>, hədiyyə yadda qalır</h2><p class="rv">Sırğa, boyunbağı və biləzik dəstləri bir yerdə, hədiyyə seçimini sürətləndirir.</p><a class="btn rv" href="#c-dest">Dəstlərə bax</a></div></section>
+<section><div class="w"><h2 class="t rv">Seçilmiş məhsullar</h2><div class="snap">${P.filter(p=>p.feat).map(card).join("")}</div></div></section>
+<section style="padding-top:0"><div class="w"><h2 class="t rv">Yeni gələnlər</h2><div class="grid">${P.filter(p=>p.isNew).slice(0,4).map(card).join("")}</div></div></section>
+<section style="background:var(--sf)"><div class="w"><h2 class="t rv">Necə sifariş verilir</h2><ol class="steps"><li class="rv"><b>Seçin</b><span>Məhsulu və variantı seçin.</span></li><li class="rv" style="--d:1"><b>Səbətə əlavə edin</b><span>İstədiyiniz qədər məhsul əlavə edin.</span></li><li class="rv" style="--d:2"><b>Sifarişi tamamlayın</b><span>Ad, telefon və ünvanı yazın.</span></li></ol></div></section>
+<section><div class="w"><h2 class="t rv">Müştəri rəyləri</h2>${revs(REVIEWS)}</div></section>
+<section style="padding-top:0"><div class="w"><div class="band rv"><h2 style="font-size:clamp(28px,4vw,38px);margin-bottom:10px">Seçimdə kömək lazımdır?</h2><p>WhatsApp-da yazın, uyğun məhsulu birlikdə seçək.</p><a class="btn wa" target="_blank" rel="noopener" href="${wa("Salam! Seçimdə kömək istəyirəm.")}">WhatsApp ilə yazın</a></div></div></section>`},
+catalog(cat){const l=list(cat),t=cat?CATS[cat]:"Bütün məhsullar";seo(t,t+": qiymətlər, stok və sifariş.");
+return `<section class="pg"><div class="w"><h1>${t}</h1><div class="chips"><a class="chip ${cat?"":"on"}" href="#catalog">Hamısı</a>${Object.entries(CATS).map(([k,v])=>`<a class="chip ${cat===k?"on":""}" href="#c-${k}">${v}</a>`).join("")}</div><div class="row" style="justify-content:space-between;margin-bottom:18px"><span class="meta">${l.length} məhsul${q?` · axtarış: “${esc(q)}” <button class="rm" onclick="q='';route()">təmizlə</button>`:""}</span><select class="f" style="width:auto" aria-label="Sırala" onchange="sort=this.value;route()"><option value="def">Standart</option><option value="a" ${sort==="a"?"selected":""}>Qiymət: aşağıdan yuxarı</option><option value="d" ${sort==="d"?"selected":""}>Qiymət: yuxarıdan aşağı</option></select></div>${l.length?`<div class="grid">${l.map(card).join("")}</div>`:'<p class="empty">Məhsul tapılmadı. Axtarışı dəyişin və ya bütün məhsullara baxın.</p>'}</div></section>`},
+product(p){pq=1;seo(p.name,p.desc+" Qiymət: "+fmt(p.price)+".");
+const opts=Object.entries(OPT[p.cat]||{}).map(([k,v])=>`<div class="opt"><label for="o-${k}">${k}</label><select class="f" id="o-${k}"><option value="">Seçin</option>${v.map(x=>`<option>${x}</option>`).join("")}</select></div>`).join("");
+return `<section class="pg"><div class="w"><a class="crumb" href="#c-${p.cat}">← ${CATS[p.cat]}</a><div class="pd"><div>${art(p)}</div><div><div class="meta">${CATS[p.cat]}</div><h1>${p.name}</h1><div class="price" style="font-size:24px;margin:8px 0">${fmt(p.price)}</div>${stk(p)}<p style="margin:16px 0;color:var(--mut)">${p.desc}</p>${opts}<div class="opt"><label>Say</label><div class="qty"><button onclick="pqty(-1)" aria-label="Azalt">−</button><span id="pq">1</span><button onclick="pqty(1)" aria-label="Artır">+</button></div></div><button class="btn pri" style="width:100%" onclick="addP(${p.id})">Səbətə əlavə et</button><button class="btn wa" style="width:100%;margin-top:10px" onclick="waP(${p.id})">Yalnız bunu WhatsApp ilə sifariş et</button><div class="info"><span>Çatdırılma və ödəniş şərtləri sifariş zamanı təsdiqlənir.</span><a href="#shipping">Çatdırılma və qaytarılma şərtləri</a><span>Material və ölçü məlumatı məhsul təsvirinə əlavə olunacaq.</span></div></div></div>
+<div style="margin-top:36px"><details open><summary>Təsvir</summary><p>${p.desc}</p></details><details><summary>Rəylər</summary>${revs(REVIEWS.filter(r=>r.pid==p.id))}</details></div>
+<h2 class="t" style="margin-top:44px">Əlaqəli məhsullar</h2><div class="grid">${P.filter(x=>x.cat===p.cat&&x.id!==p.id).slice(0,4).map(card).join("")}</div></div></section>`},
+cart(){seo("Səbət","Səbətinizdəki məhsullar.");
+if(!C.length)return `<section class="pg"><div class="w"><h1>Səbət</h1><p class="empty">Səbət boşdur. Bəyəndiyiniz məhsulları əlavə edin.</p><p style="margin-top:18px;text-align:center"><a class="btn pri" href="#catalog">Məhsullara bax</a></p></div></section>`;
+return `<section class="pg"><div class="w"><h1>Səbət</h1><div class="two"><div>${C.map((i,n)=>{const p=prod(i);return `<div class="cl">${art(p)}<div><b><a href="#p-${p.id}">${p.name}</a></b><div class="meta">${otx(i.o)?otx(i.o)+" · ":""}${fmt(p.price)}</div><div class="qty" style="margin-top:6px"><button onclick="cq(${n},-1)" aria-label="Azalt">−</button><span>${i.q}</span><button onclick="cq(${n},1)" aria-label="Artır">+</button></div> <button class="rm" onclick="cq(${n},-${i.q})">Sil</button></div><div class="price">${fmt(p.price*i.q)}</div></div>`}).join("")}</div>
+<aside class="box"><div class="row" style="flex-wrap:nowrap;margin-bottom:6px"><input class="f" id="cc" placeholder="Kupon kodu" value="${cp}"><button class="btn" onclick="applyC()">Tətbiq et</button></div><p class="meta" style="margin-bottom:12px">Demo üçün kod: DEMO10 (yalnız nümayiş). Real kuponlar WordPress-də yaradılır.</p><div class="tr"><span>Məhsullar</span><span>${fmt(sub())}</span></div>${disc()?`<div class="tr"><span>Kupon</span><span>-${fmt(disc())}</span></div>`:""}<div class="tr"><span>Çatdırılma</span><span>sifarişdə razılaşdırılır</span></div><div class="tr b"><span>Cəmi</span><span>${fmt(total())}</span></div><a class="btn pri" style="width:100%;margin-top:14px" href="#checkout">Sifarişi tamamla</a><button class="btn wa" style="width:100%;margin-top:10px" onclick="waCart()">Səbəti WhatsApp ilə göndər</button></aside></div></div></section>`},
+checkout(){seo("Sifarişin tamamlanması","Ad, telefon və ünvanı yazın, sifarişi tamamlayın.");
+if(!C.length)return `<section class="pg"><div class="w"><h1>Sifariş</h1><p class="empty">Səbət boşdur. <a href="#catalog" style="text-decoration:underline">Məhsullara baxın</a>.</p></div></section>`;
+return `<section class="pg"><div class="w"><h1>Sifarişin tamamlanması</h1><div class="two"><form class="fl box" onsubmit="return place(event)" novalidate><label>Ad və soyad<input class="f" id="nm" autocomplete="name"></label><label>Telefon nömrəsi<input class="f" id="ph" type="tel" placeholder="+994 50 000 00 00" autocomplete="tel"></label><label>Çatdırılma ünvanı<input class="f" id="ad" placeholder="Küçə, bina, mənzil" autocomplete="street-address"></label><label>Şəhər / rayon<input class="f" id="ct" value="Bakı"></label><label>Sifariş qeydi (istəyə bağlı)<textarea class="f" id="nt"></textarea></label>
+<fieldset style="border:1px solid var(--ln);padding:12px"><legend style="font-size:14px;font-weight:600;padding:0 6px">Ödəniş</legend><label style="font-weight:400"><input type="radio" checked> Ödəniş üsulu sifariş təsdiqlənəndə razılaşdırılır</label><label style="font-weight:400;color:var(--mut)"><input type="radio" disabled> Kartla ödəniş (ödəniş provayderi qoşulandan sonra aktiv olacaq)</label></fieldset>
+<div class="er" id="er" role="alert"></div><button class="btn pri" type="submit">Sifarişi tamamla</button><p class="meta">Demo: sifariş bazası yoxdur, sifariş mesajı WhatsApp-da açılır. WordPress versiyasında sifarişlər admin paneldə saxlanılır.</p></form>
+<aside class="box"><h3 style="font-size:24px;margin-bottom:10px">Sifarişiniz</h3>${C.map(i=>{const p=prod(i);return `<div class="tr"><span>${p.name}${otx(i.o)?" ("+otx(i.o)+")":""} × ${i.q}</span><span>${fmt(p.price*i.q)}</span></div>`}).join("")}${disc()?`<div class="tr"><span>Kupon</span><span>-${fmt(disc())}</span></div>`:""}<div class="tr"><span>Çatdırılma</span><span>razılaşdırılır</span></div><div class="tr b"><span>Cəmi</span><span>${fmt(total())}</span></div></aside></div></div></section>`},
+done(){seo("Sifariş mesajı hazırdır","Sifariş mesajı WhatsApp-da açıldı.");
+return `<section class="pg"><div class="w" style="max-width:620px"><h1>Sifariş mesajı hazırdır</h1><p style="color:var(--mut);margin-bottom:12px">Sifariş mesajı WhatsApp-da açıldı. Sifarişin bizə çatması üçün WhatsApp-da “Göndər” düyməsinə basın.</p><p style="color:var(--mut);margin-bottom:22px">Mesaj açılmayıbsa, aşağıdakı düymə ilə yenidən açın. Sifarişi göndərdikdən sonra səbəti təmizləyə bilərsiniz.</p><div class="row">${lastMsg?`<a class="btn wa" target="_blank" rel="noopener" href="${wa(lastMsg)}">Mesajı yenidən aç</a>`:""}<button class="btn" onclick="C=[];cp='';save();upd();location.hash='#home'">Səbəti təmizlə</button></div></div></section>`},
+about(){seo("Haqqımızda","Nüra Aksesuar haqqında.");return `<section class="pg"><div class="w" style="max-width:720px"><h1>Sadə və zərif aksesuarlar</h1><p style="color:var(--mut);margin-bottom:14px">Biz bijuteriya və aksesuarları sadə seçim və rahat sifariş prosesi ilə təqdim edirik. Hər məhsulda qiymət və mövcudluq məlumatı açıq göstərilir.</p><p style="color:var(--mut);margin-bottom:22px">Mağazanın real hekayəsi, məhsulların mənşəyi və xidmət şərtləri mağaza sahibi ilə razılaşdırıldıqdan sonra bu bölməyə əlavə olunacaq.</p><a class="btn pri" href="#catalog">Məhsullara bax</a></div></section>`},
+contact(){seo("Əlaqə","WhatsApp ilə sifariş və əlaqə.");return `<section class="pg"><div class="w" style="max-width:720px"><h1>Bizimlə əlaqə</h1><div class="info" style="margin:0 0 22px"><span><b>WhatsApp:</b> sifariş və suallar üçün</span><span><b>Ünvan:</b> ${ADDR}</span><span><b>İş saatları:</b> ${HOURS}</span></div><a class="btn wa" target="_blank" rel="noopener" href="${wa("Salam!")}">WhatsApp ilə yazın</a></div></section>`},
+shipping(){seo("Çatdırılma və qaytarılma","Çatdırılma, ödəniş və qaytarılma şərtləri.");return `<section class="pg"><div class="w" style="max-width:720px"><h1>Çatdırılma və qaytarılma</h1><h3 style="margin:18px 0 6px">Çatdırılma</h3><p style="color:var(--mut)">Çatdırılma ərazisi, haqqı və təxmini müddət: [mağaza sahibi ilə razılaşdırılaraq əlavə olunacaq]. Hazırda çatdırılma şərtləri sifariş zamanı təsdiqlənir.</p><h3 style="margin:18px 0 6px">Ödəniş</h3><p style="color:var(--mut)">Mövcud ödəniş üsulları: [əlavə olunacaq]. Kartla onlayn ödəniş yalnız ödəniş provayderi qoşulduqdan sonra təklif olunacaq.</p><h3 style="margin:18px 0 6px">Qaytarılma və dəyişdirmə</h3><p style="color:var(--mut)">Müddət və şərtlər: [mağaza sahibi tərəfindən müəyyən ediləcək].</p></div></section>`},
+offer(){seo("Sayt təklifi","PLUS paketi: 899 AZN. Daxil olan və olmayan xidmətlər, ödəniş qaydası və təhvil şərtləri.");
+const vd="https://wa.me/"+VD+"?text="+encodeURIComponent("Salam! Nüra Aksesuar demo saytı üçün PLUS paketi ilə maraqlanıram.");
+return `<section class="pg"><div class="w" style="max-width:900px"><h1>Bu sayt üçün təklif</h1><p style="color:var(--mut);margin-bottom:26px;max-width:60ch">PLUS paketi tam onlayn sifariş qəbul edə bilən e-commerce mağazasıdır: səbət, sifariş forması, variantlar, kuponlar və admin paneldə idarəetmə.</p>
+<div class="band" style="text-align:left;margin-bottom:38px"><div class="meta">PLUS paketi</div><div class="pr">899 AZN</div><p style="margin:8px 0 0;max-width:none">Layihə üzrə bir dəfəlik xidmət haqqı. Domen, hosting və üçüncü tərəf xərcləri daxil deyil.</p></div>
+<div class="of"><div><h3 style="font-size:26px;margin-bottom:14px">Qiymətə daxildir</h3>${L(["Brendə uyğunlaşdırılmış dizayn","Ana səhifə, məhsul kataloqu və kateqoriya səhifələri","Məhsul səhifələri, əlaqəli məhsullar","50 məhsula qədər ilkin yerləşdirmə","WooCommerce inteqrasiyası","Səbət sistemi","Checkout və sifariş forması: ad, telefon, ünvan","Sifarişlərin admin paneldə idarə edilməsi","Məhsul variantları (rəng, ölçü və s.)","Kupon və endirim kodları","Məhsul axtarışı","Stok vəziyyətinin göstərilməsi","WhatsApp ilə sifariş alternativi","Haqqımızda, Əlaqə, Çatdırılma və qaytarılma səhifələri","Əsas SEO sazlamaları","Analitika inteqrasiyası üçün hazırlıq","Həqiqi müştəri rəyləri üçün struktur","Mobil uyğunluq","WordPress admin panelində məhsul idarəetməsi"])}</div>
+<div><h3 style="font-size:26px;margin-bottom:14px">Qiymətə daxil deyil</h3>${L(["Domen","Hosting","Ödənişli WordPress temaları","Premium plugin və lisenziyalar","Ödəniş provayderinin komissiyaları","SMS və digər üçüncü tərəf xidmətləri","Xüsusi API və kuryer inteqrasiyaları","Müştəri hesabı və şəxsi kabinet (əlavə xidmət kimi qiymətləndirilir)"],"no")}<div class="info"><span><b>Kartla ödəniş:</b> uyğun ödəniş provayderi ilə inteqrasiya paketə daxildir, lakin real provayder hesabından, müqavilədən və API imkanlarından asılıdır. Provayder məlumatları olmadan işlək ödəniş vəd edilmir.</span><span>Domen və hosting sizin adınıza qeydiyyatdan keçir. Quraşdırma və texniki sazlamanı mən həyata keçirirəm.</span></div></div></div>
+<h3 style="font-size:26px;margin-bottom:14px">İş prosesi</h3>${L(["<b>Demo:</b> bu sayt kompüterdə və telefonda yoxlanır.","<b>Razılaşma:</b> paket, iş həcmi, şərtlər, müqavilə və ödəniş.","<b>WordPress-ə çevrilmə:</b> təsdiqlənmiş dizayn sizin domeninizdəki WordPress-də qurulur, WooCommerce funksiyaları inteqrasiya olunur.","<b>Test:</b> məhsullar, səbət, sifariş forması və mobil görünüş yoxlanır.","<b>Təhvil:</b> admin panelinin istifadəsi göstərilir və layihə təhvil verilir."])}
+<div class="of" style="margin-top:36px"><div><h3 style="font-size:26px;margin-bottom:14px">Ödəniş</h3>${L(["50% ilkin ödəniş","Qalan 50% üç aylıq hissə ilə ödənə bilər","Hissəli ödəniş yalnız əvvəlcədən razılaşdırılmış müqavilə və ödəniş cədvəli ilə tətbiq olunur"])}</div><div><h3 style="font-size:26px;margin-bottom:14px">Sizdən lazım olanlar</h3>${L(["Məhsul şəkilləri, adları, qiymətləri və təsvirləri","Domen və hosting (sizin adınıza)","Brend adı, loqo və əlaqə məlumatları","Ödəniş provayderi məlumatları (kartla ödəniş istənilərsə)"])}</div></div>
+<h3 style="font-size:26px;margin-bottom:14px">Təhvildən sonra</h3>${L(["7 günlük texniki dəstək: razılaşdırılmış funksiyalardakı texniki qüsurlar düzəldilir","Yeni funksiyalar və əlavə işlər ayrıca qiymətləndirilir","Hazırlanma müddəti və dizayn düzəlişlərinin sayı müqavilədə razılaşdırılır"])}
+<div class="info" style="margin:30px 0"><span>Bu səhifədəki sayt statik demodur: səbət brauzerdə müvəqqəti saxlanılır, sifariş mesajı WhatsApp-da açılır, kupon və variantlar nümayiş üçündür. Real məhsul bazası, sifarişlərin saxlanması və kuponlar WordPress/WooCommerce mərhələsində işləyəcək.</span><span>Fərdi dizayn, axtarış və filtrləmə, 100 məhsul və e-poçt bildirişləri üçün: PREMIUM — 1,499 AZN.</span></div>
+<a class="btn wa" target="_blank" rel="noopener" href="${vd}">Təklif üzrə yazın</a></div></section>`}};
+const SC=[["uzuk","Üzüklər",'<circle cx="100" cy="130" r="46"/><circle cx="100" cy="130" r="39"/><path d="M100 50l24 26-24 34-24-34z"/><path d="M76 76h48M100 50l-12 26 12 34 12-34"/>'],
+["sirga","Sırğalar",'<circle cx="68" cy="40" r="6"/><path d="M68 46v22"/><path d="M68 68l-15 24 15 40 15-40z"/><path d="M53 92h30"/><circle cx="132" cy="40" r="6"/><path d="M132 46v22"/><path d="M132 68l-15 24 15 40 15-40z"/><path d="M117 92h30"/>'],
+["boyun","Boyunbağılar",'<path d="M26 36Q100 196 174 36"/><path d="M40 38Q100 170 160 38"/><path d="M100 116v20"/><path d="M100 136l15 18-15 24-15-24z"/>'],
+["bilek","Biləziklər",'<ellipse cx="100" cy="108" rx="72" ry="46"/><ellipse cx="100" cy="108" rx="60" ry="34"/><circle cx="100" cy="158" r="9"/><path d="M100 142v7"/>'],
+["dest","Dəstlər",'<circle cx="66" cy="136" r="32"/><circle cx="66" cy="136" r="25"/><path d="M42 82Q86 150 126 82"/><path d="M142 36v30"/><path d="M142 66l-16 24 16 42 16-42z"/>']];
+function scenes(){const box=$("#scn");if(!box)return;const rd=matchMedia("(prefers-reduced-motion:reduce)").matches;
+box.innerHTML=SC.map(x=>`<svg viewBox="0 0 200 200">${x[2]}</svg>`).join("");const sv=[...box.children],dt=$("#dts");dt.innerHTML=SC.map(()=>"<i></i>").join("");
+sv.forEach(g=>g.querySelectorAll("*").forEach((e,k)=>{try{const l=Math.ceil(e.getTotalLength())+2;e.style.strokeDasharray=l;e.style.strokeDashoffset=rd?0:l;e.style.animationDelay=(k*.22)+"s"}catch(_){}}));
+let i=0;const cap=$("#sc");const show=n=>{sv.forEach((g,k)=>g.classList.toggle("on",k===n));[...dt.children].forEach((d,k)=>d.classList.toggle("on",k===n));cap.textContent=SC[n][1];cap.href="#c-"+SC[n][0]};
+show(0);if(!rd)window._sc=setInterval(()=>{i=(i+1)%SC.length;show(i)},4800)}
+function revs(a){if(!a.length)return '<p class="empty">Burada yalnız real müştərilərin rəyləri göstərilir. Hələ rəy yoxdur.</p>';return `<div class="grid" style="grid-template-columns:1fr">${a.map(r=>`<figure class="box"><div style="color:var(--gold)">${"★".repeat(r.stars)}${"☆".repeat(5-r.stars)}</div><blockquote>${esc(r.text)}</blockquote><figcaption class="meta">${esc(r.author)}</figcaption></figure>`).join("")}</div>`}
+function reveal(){const els=document.querySelectorAll(".rv");if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion:reduce)").matches){els.forEach(e=>e.classList.add("in"));return}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12,rootMargin:"0px 0px -6% 0px"});els.forEach(e=>io.observe(e))}
+const topState=()=>document.body.classList.toggle("top",window._h==="home"&&scrollY<60);
+function route(){const h=location.hash.slice(1)||"home";let m,html;
+if(m=h.match(/^p-(\d+)$/)){const p=P.find(x=>x.id==m[1]);html=p?V.product(p):V.home()}
+else if(m=h.match(/^c-(\w+)$/)){html=CATS[m[1]]?V.catalog(m[1]):V.home()}
+else if(h==="catalog")html=V.catalog();else if(V[h]&&!["product","catalog"].includes(h))html=V[h]();else html=V.home();
+const chg=window._f&&window._h!==h;
+const swap=()=>{clearInterval(window._sc);app.innerHTML=`<div>${html}</div>`;
+document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.hash==="#"+h||(/^(p|c)-/.test(h)&&a.hash==="#catalog")));
+if(chg)window.scrollTo(0,0);window._h=(V[h]&&!/^(p|c)-/.test(h))||h==="catalog"||/^(p|c)-/.test(h)?h:"home";topState();if(window._h==="home")scenes();reveal()};
+window._f=1;
+chg&&document.startViewTransition&&!matchMedia("(prefers-reduced-motion:reduce)").matches?document.startViewTransition(swap):(window._h=h,swap())}
+$("#fab").href=wa("Salam! Məhsullarınız haqqında məlumat almaq istəyirəm.");$("#fa").textContent=ADDR;$("#fh").textContent=HOURS;
+addEventListener("scroll",topState,{passive:true});addEventListener("hashchange",route);upd();route();
+</script>
+</body>
+</html>
